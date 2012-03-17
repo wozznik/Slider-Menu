@@ -35,7 +35,7 @@ To use Slider Menu in your application, you need:
 		{id: N, view: 'yourAPP.view.anotherview', icon: 'undefined', useIcon:true, text:'other_menu_option_text'},
 	]
 
-  SliderMenu automatically creates the view associated to the menu option and put it inside the main view.
+	** Note: SliderMenu automatically creates the view associated to the menu option and put it inside the main view. **
 
 5. Add a SliderMenuContainer instance inside Viewport:
 	
@@ -68,7 +68,8 @@ and then you can configure a set of parameters:
 	sliderMenu.setOpenAnimationDuration(300); //Sets the duration of open animation to 300ms
 
 ###Menu icon
-	** Note: It's important that the icon is declared inside your app.css. Otherwise, a blank button will be prompted **
+
+** Note: It's important that the icon is declared inside your app.css. Otherwise, a blank button will be prompted **
 	
 	sliderMenu.setMenuIcon('list'); //Sets icon of menu button to 'list' icon
 
