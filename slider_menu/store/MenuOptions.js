@@ -19,6 +19,7 @@ Ext.define('SliderMenu.store.MenuOptions', {
     	model: 'SliderMenu.model.MenuOption',
 		storeId: 'MenuOptionsStore',
 		
+		//Customize your menu options
 		data: [
 			{id: 1, view: 'SliderMenuDemo.view.Option1', icon: 'undefined', useIcon:true, text:'Option 1'},
 			{id: 2, view: 'SliderMenuDemo.view.Option2', icon: 'undefined', useIcon:true, text:'Option 2'},
