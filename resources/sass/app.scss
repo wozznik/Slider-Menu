@@ -1,0 +1,31 @@
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+
+@include pictos-iconmask('list');
+
+// Your custom code goes here...
+.x-slidermenu-main.open {
+    /**
+     *  The performance of this now seem acceptable.  If you
+     *  are experiencing a laggy sliding animation you can either
+     *   a) Turn off the slide animation (set duration to 0), or
+     *   b) Use the border-image method below
+     */
+     box-shadow: 0 0 4px 1px #333;
+     -webkit-box-shadow: 0 0 4px 1px #333;
+}
