@@ -11,7 +11,7 @@ Getting Started
 
 To use Slider Menu in your application, you need:
 
-1) Put the "slider_menu" folder inside your application root folder Ex: path_to_www/MyApp/slider_menu 
+1) Copy the "slider_menu" folder inside your application root folder Ex: path_to_www/MyApp/slider_menu 
 
 2) Add following code at the beginning of your app.js:
 
@@ -35,7 +35,7 @@ To use Slider Menu in your application, you need:
 		{id: N, view: 'yourAPP.view.anotherview', icon: 'undefined', useIcon:true, text:'other_menu_option_text'},
 	]
 
-** Note: SliderMenu automatically creates the view associated to the menu option and put it inside the main view. **
+** Note: The SliderMenu automatically creates the view associated to the menu option selected and put it inside the main view. **
 
 5) Add a SliderMenuContainer instance inside Viewport:
 	
@@ -69,7 +69,7 @@ and then you can configure a set of parameters:
 
 ###Menu icon
 
-** Note: It's important that the icon is declared inside your app.css. Otherwise, a blank button will be prompted **
+** Note: It's important that the icon is declared inside your app.css. Otherwise, a blank button will be showed **
 	
 	sliderMenu.setMenuIcon('list'); //Sets icon of menu button to 'list' icon
 
