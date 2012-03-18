@@ -23,11 +23,27 @@ To use Slider Menu in your application, you need:
 
 	 views: [
         'SliderMenu.view.SliderMenuContainer',
-        //Add here your view dependencies
-        ...
+        //Add here your other views...
     ],
 
-4) Modify data array inside "slider_menu/store/MenuOptions.js" to link each menu option, to views of your application:
+4) Add SliderMenuController inside required controllers from app.js:
+	controllers: [
+		'SliderMenu.controller.SliderMenuController',
+		//Add here your other controllers...
+	],
+
+5) Add MenuOption model inside required models from app.js: 
+	models: [
+		'SliderMenu.model.MenuOption'
+		//Add here your other models...
+	],
+
+6) Add MenuOptions store inside required stores from app.js:
+	stores: [
+		'SliderMenu.store.MenuOptions'
+	],
+
+7) Modify data array inside "slider_menu/store/MenuOptions.js" to link each menu option, to views of your application:
 
 	data: [
 		{id: 1, view: 'yourAPP.view.someview', icon: 'undefined', useIcon:true, text:'menu_option_text'},
@@ -37,7 +53,7 @@ To use Slider Menu in your application, you need:
 
 ** Note: The SliderMenu automatically creates the view associated to the menu option selected and put it inside the main view. **
 
-5) Add a SliderMenuContainer instance inside Viewport:
+8) Add a SliderMenuContainer instance inside Viewport:
 	
 	Ext.Viewport.add(Ext.create('SliderMenu.view.SliderMenuContainer'));
 
@@ -73,4 +89,19 @@ and then you can configure a set of parameters:
 	
 	sliderMenu.setMenuIcon('list'); //Sets icon of menu button to 'list' icon
 
+Themming
+----------
+You can change the style of your slider menu, overwriding two classes:
+	
+	.x-slidermenu-main 
+	.x-slidermenu-menu
+
+By default, you must to overwride a open subclass of main to sets a shadow effect between menu and main container. 
+
+Ex:
+
+	.x-slidermenu-main.open {
+	     box-shadow: 0 0 4px 1px #333;
+	     -webkit-box-shadow: 0 0 4px 1px #333;
+	}
 

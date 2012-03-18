@@ -20,12 +20,6 @@
 
 // Your custom code goes here...
 .x-slidermenu-main.open {
-    /**
-     *  The performance of this now seem acceptable.  If you
-     *  are experiencing a laggy sliding animation you can either
-     *   a) Turn off the slide animation (set duration to 0), or
-     *   b) Use the border-image method below
-     */
      box-shadow: 0 0 4px 1px #333;
      -webkit-box-shadow: 0 0 4px 1px #333;
 }
