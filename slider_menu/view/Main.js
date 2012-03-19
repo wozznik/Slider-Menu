@@ -146,7 +146,21 @@ Ext.define('SliderMenu.view.Main', {
         constraint.min.x = offsetX;
         constraint.max.x = offsetX;
         this.slideMenu(offsetX, duration);
-        this.setMasked(masked);
+        
+        if(masked){
+            //open menu -> create a special mask to detects tap events
+            this.setMasked({
+                xtype: 'mask',
+                listeners: {
+                    tap: function(){
+                        //Main (this.parent) fires a tap event only when the main is wrapped
+                        this.parent.fireEvent('tap'); 
+                    }
+                }
+            })
+        }else{
+            this.setMasked(false);
+        }
      },
 
     /**

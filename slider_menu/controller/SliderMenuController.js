@@ -39,12 +39,23 @@ Ext.define('SliderMenu.controller.SliderMenuController', {
                 push: 'onMainPush',
                 pop: 'onMainPop',
                 tap: 'onMainTapped',
+            },
+
+            mainWrapper: {
+                tap: 'onMainTapped'
             }
     	},
     },
 
+    /**
+     * When the main menu is tapped (only when it's masked -> menu is open) 
+     * we close slider menu
+     */
     onMainTapped: function(){
-        console.log('Main tapped');
+        var main = this.getMain();
+        var menu = this.getMenu();
+
+        main.closeMenu(menu.getCloseAnimDuration());
     },
 
     /**
