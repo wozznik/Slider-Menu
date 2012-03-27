@@ -49,8 +49,8 @@ Ext.application({
         slidermenu.setTitle('Options...');
         slidermenu.setWidth(250);
         slidermenu.setMenuIcon('list');
-        slidermenu.setMenuToolbarUi('slider-menu-dark');
-        slidermenu.setMainToolbarUi('slider-menu-dark');
+        slidermenu.setMenuToolbarUi('slider-menu-red');
+        slidermenu.setMainToolbarUi('slider-menu-red');
 
         // Initialize the main view
         Ext.Viewport.add(slidermenu);

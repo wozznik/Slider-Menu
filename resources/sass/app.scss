@@ -18,7 +18,7 @@
 
 @include pictos-iconmask('list');
 
-@include sencha-toolbar-ui( 'slider-menu-dark', darken(#f00, 20), 'flat');
+@include sencha-toolbar-ui( 'slider-menu-red', darken(#f00, 20), 'flat');
 
 // Your custom code goes here...
 .x-slidermenu-main.open {

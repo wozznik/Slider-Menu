@@ -96,7 +96,7 @@ and then you can configure a set of parameters:
 
 In your app.scss you need to define your custom toolbar UI theme for SliderMenu with something like this:
 	
-	@include sencha-toolbar-ui( 'slider-menu-dark', #333, 'flat');
+	@include sencha-toolbar-ui( 'slider-menu-red', darken(#f00, 20), 'flat');
 
 Themming
 ----------
