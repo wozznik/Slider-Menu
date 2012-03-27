@@ -18,7 +18,10 @@ Ext.define('SliderMenu.view.Main', {
 
     config: {
         docked: 'left',
-        style: 'width: 100%; opacity: 1;',
+        width: '100%',
+        height: '100%',
+
+        style: 'opacity: 1; z-index: 1',
         layout: 'card',
 
         menuButtonIcon: 'more',

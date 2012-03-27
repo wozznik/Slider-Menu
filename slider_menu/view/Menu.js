@@ -19,9 +19,11 @@ Ext.define('SliderMenu.view.Menu', {
 	
     config: {
         //Menu is on top left and z-index of 0 (hidden when menu is not slided)
-        style: 'position: absolute; top: 0; left: 0; height: 100%;' +
-                'z-index: 0',
+        style: 'position: absolute; top: 0; left: 0; z-index: 0',
         
+        width: '100%',
+        height: '100%',
+
         //By default title sets to 'Slider Menu'
         title: 'Slider Menu', //You can change it using menu.setTitle('new title');
 

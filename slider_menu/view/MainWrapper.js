@@ -17,6 +17,7 @@ Ext.define('SliderMenu.view.MainWrapper', {
 	
     config: {
         layout: 'card',
+        style: 'opacity: 1;',
         activeView: null,
         title: 'xxxxxxxxxxxxxxxxx', //it's a hack to sets title width
 
