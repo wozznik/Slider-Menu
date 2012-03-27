@@ -6,7 +6,7 @@ The implementation of the menu is inside "slider_menu" directory.
 
 This is a work in progress and still needs work to improve and change things...
 
-You can view a live demo at: wozznik.github.com/Slider-Menu
+You can view a live demo [here](http://wozznik.github.com/Slider-Menu)
 
 Getting Started
 ---------------
