@@ -115,6 +115,24 @@ Ext.define('SliderMenu.view.SliderMenuContainer', {
     },
 
     /**
+     * Sets the toolbar ui from left menu
+     *
+     * @param {Ext.String} ui: The ui to apply at left menu toolbar
+     */
+    setMenuToolbarUi: function(ui){
+        this.getMenu().setToolbarUi(ui);
+    },
+
+    /**
+     * Sets the toolbar ui from main menu
+     *
+     * @param {Ext.String} ui: The ui to apply at left main toolbar
+     */
+    setMainToolbarUi: function(ui){
+        this.getMain().setToolbarUi(ui);
+    },
+    
+    /**
      * Gets menu item from slidermenu
 	 * @private
      */

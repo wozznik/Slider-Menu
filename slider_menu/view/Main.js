@@ -21,7 +21,7 @@ Ext.define('SliderMenu.view.Main', {
         width: '100%',
         height: '100%',
 
-        style: 'opacity: 1; z-index: 1',
+        style: 'position: absolute; opacity: 1; z-index: 200',
         layout: 'card',
 
         menuButtonIcon: 'more',
@@ -189,4 +189,12 @@ Ext.define('SliderMenu.view.Main', {
         return true;
     },
 
+    /**
+     * Generic method to change the toolbar ui inside main panel.
+     *
+     * @param {String} ui: The new ui style for the toolbar
+     */
+    setToolbarUi: function(ui){
+        this.getNavigationBar().setUi(ui);
+    },
 });

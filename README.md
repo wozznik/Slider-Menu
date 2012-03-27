@@ -89,6 +89,15 @@ and then you can configure a set of parameters:
 	
 	sliderMenu.setMenuIcon('list'); //Sets icon of menu button to 'list' icon
 
+###SliderMenu UI
+
+	slidermenu.setMenuToolbarUi('slider-menu-red');
+    slidermenu.setMainToolbarUi('slider-menu-red');
+
+In your app.scss you need to define your custom toolbar UI theme for SliderMenu with something like this:
+	
+	@include sencha-toolbar-ui( 'slider-menu-dark', #333, 'flat');
+
 Themming
 ----------
 You can change the style of your slider menu, overwriding two classes:

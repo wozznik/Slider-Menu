@@ -19,7 +19,7 @@ Ext.define('SliderMenu.view.Menu', {
 	
     config: {
         //Menu is on top left and z-index of 0 (hidden when menu is not slided)
-        style: 'position: absolute; top: 0; left: 0; z-index: 0',
+        style: 'position: absolute; top: 0; left: 0; z-index: 100',
         
         width: '100%',
         height: '100%',
@@ -34,6 +34,7 @@ Ext.define('SliderMenu.view.Menu', {
 
         //NOTE: You need to overwride this css class to customize the theme
         cls: 'x-slidermenu-menu',
+        ui: 'menu',
 
         docked: 'left',
 
@@ -76,5 +77,14 @@ Ext.define('SliderMenu.view.Menu', {
 
         this.items.items[0].setTitle(newTitle);
         return true;
+    },
+
+    /**
+     * Generic method to change the toolbar ui inside menu panel.
+     *
+     * @param {String} ui: The new ui style for the toolbar
+     */
+    setToolbarUi: function(ui){
+        this.down('toolbar').setUi(ui);
     }
 });
