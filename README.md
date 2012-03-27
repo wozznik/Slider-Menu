@@ -6,6 +6,8 @@ The implementation of the menu is inside "slider_menu" directory.
 
 This is a work in progress and still needs work to improve and change things...
 
+You can view a live demo at: wozznik.github.com/Slider-Menu
+
 Getting Started
 ---------------
 
@@ -114,3 +116,13 @@ Ex:
 	     -webkit-box-shadow: 0 0 4px 1px #333;
 	}
 
+Supported devices
+-------------------
+Slider-Menu has been tested on:
+
+Android (2.x)
+Android (4.x)
+iOS 5
+BlackBerry Torch
+
+**Note: If you can test Slider-Menu in other device, you can create a new issue with the result of the test **
