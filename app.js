@@ -4,7 +4,7 @@ Ext.Loader.setPath({
 });
 
 Ext.Loader.setPath({
-    'SliderMenu': 'slider_menu/'
+    'SliderMenu': 'slider_menu'
 });
 
 //</debug>
