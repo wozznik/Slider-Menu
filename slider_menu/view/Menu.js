@@ -10,7 +10,7 @@
  */
 
 Ext.define('SliderMenu.view.Menu', {
-    extend: 'Ext.dataview.List',
+    extend: 'Ext.DataView',
     xtype: 'menucard',
 	
     requires: [
