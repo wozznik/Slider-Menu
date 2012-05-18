@@ -20,8 +20,41 @@
 
 @include sencha-toolbar-ui( 'slider-menu-red', darken(#f00, 20), 'flat');
 
+$white: #FFF;
+$black: #000;
+$grey: #333;
+$default-line-color: darken(#EEE, 25);
+
+.x-slidermenu-menu{
+	background: $white;
+	color: $grey;
+
+	//Each dataview item list style
+	.x-data-item {
+	    height: 45px;
+		font-size: 20px;
+	    padding: 5px;
+
+	    border-bottom: 1px solid $default-line-color;
+	    -webkit-transition: linear .2s background;
+	}
+
+	.x-data-item:first-child{
+		border-top: 1px solid $black;
+	}
+
+	.x-data-item:last-child{
+	    border-bottom: 1px solid $default-line-color;
+	}
+
+	.x-item-selected{
+		background: rgba(lighten($grey,50),0.5);
+	    -webkit-box-shadow: inset 0px 0px 1px 0px rgba($grey, 1);
+	}
+}
+
 // Your custom code goes here...
 .x-slidermenu-main.open {
-     box-shadow: 0 0 4px 1px #333;
-     -webkit-box-shadow: 0 0 4px 1px #333;
+	box-shadow: 0 0 4px 1px #333;
+	-webkit-box-shadow: 0 0 4px 1px #333;
 }

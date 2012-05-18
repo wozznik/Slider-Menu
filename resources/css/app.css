@@ -4437,6 +4437,23 @@ html, body {
     color: white;
     text-shadow: rgba(0, 0, 0, 0.5) 0 -0.08em 0; }
 
+.x-slidermenu-menu {
+  background: white;
+  color: #333333; }
+  .x-slidermenu-menu .x-data-item {
+    height: 45px;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 1px solid #aeaeae;
+    -webkit-transition: linear .2s background; }
+  .x-slidermenu-menu .x-data-item:first-child {
+    border-top: 1px solid black; }
+  .x-slidermenu-menu .x-data-item:last-child {
+    border-bottom: 1px solid #aeaeae; }
+  .x-slidermenu-menu .x-item-selected {
+    background: rgba(179, 179, 179, 0.5);
+    -webkit-box-shadow: inset 0px 0px 1px 0px #333333; }
+
 .x-slidermenu-main.open {
   box-shadow: 0 0 4px 1px #333;
   -webkit-box-shadow: 0 0 4px 1px #333; }
