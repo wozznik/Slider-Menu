@@ -14,7 +14,8 @@ Ext.define('SliderMenu.view.Menu', {
     xtype: 'menucard',
 	
     requires: [
-        'Ext.Toolbar' //By default it has a toolbar on top
+        'Ext.Toolbar', //By default it has a toolbar on top
+        'SliderMenu.view.MenuOption',
     ],
 	
     config: {
@@ -40,7 +41,10 @@ Ext.define('SliderMenu.view.Menu', {
 
         store: 'MenuOptionsStore',
 
-        itemTpl: '{text}', //TODO: Make it configurable
+        useComponents: true,
+        defaultType:'menuitem',
+
+        //itemTpl: '{text}', //TODO: Make it configurable
 
         items:{
             xtype: 'toolbar',

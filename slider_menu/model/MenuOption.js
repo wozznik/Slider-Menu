@@ -20,9 +20,16 @@ Ext.define('SliderMenu.model.MenuOption', {
     	fields: [
     		{name: 'id', type: 'int'}, //Option identifier
     		{name: 'view', type: 'string'}, //Action to fire
-    		{name: 'icon', type: 'string'}, //Icon is not available at the moment
-    		{name: 'useIcon', type: 'boolean'}, //Is false by default (see the comment above)
+    		{name: 'iconCls', type: 'string'}, //Icon is not available at the moment
+    		{name: 'iconMask', type: 'boolean'}, //Is false by default (see the comment above)
     		{name: 'text', type: 'string'}, //Text to display in the MenuOption
+            {
+                name: 'iconHidden',
+                type: 'boolean',
+                convert: function(v, record){
+                    return !record.data.iconMask;
+                }
+            }
     	]
     }
 });
