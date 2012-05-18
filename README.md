@@ -8,6 +8,8 @@ This is a work in progress and still needs work to improve and change things...
 
 You can view a live demo [here](http://wozznik.github.com/Slider-Menu)
 
+NOTE: Version 0.2 supports icons inside menu options! (See demo for more details).
+
 Getting Started
 ---------------
 
