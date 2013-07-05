@@ -117,14 +117,22 @@ Ext.define('SliderMenu.controller.SliderMenuController', {
      * @param {Ext.Number} duration: duration of the close animation
      */
     changeViewTo: function(record, index, duration){
-        var menu = this.getMenu();
-        var main = this.getMain();
+	    var menu = this.getMenu();
+	    var main = this.getMain();
 
-        menu.select(index);
-        var view = Ext.create(record.data.view);
+	    menu.select(index);
+	    var xtype = record.data.xtype;
 
-        main.changeViewTo(view);
-        main.closeMenu(duration);
-    }
+	    var activeView = main.getActiveItem().config.xtype;
+	    //If activeView is not same as newView push new view
+	    if (activeView != xtype) {
+		    main.push(
+			    {
+				    xtype: xtype
+			    }
+		    );
+	    }
+	    main.closeMenu(duration);
+    },
 });
 

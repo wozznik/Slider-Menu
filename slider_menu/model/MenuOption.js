@@ -19,7 +19,7 @@ Ext.define('SliderMenu.model.MenuOption', {
     config: {
     	fields: [
     		{name: 'id', type: 'int'}, //Option identifier
-    		{name: 'view', type: 'string'}, //Action to fire
+    		{name: 'xtype', type: 'string'}, //Action to fire
     		{name: 'iconCls', type: 'string'}, //Icon is not available at the moment
     		{name: 'iconMask', type: 'boolean'}, //Is false by default (see the comment above)
     		{name: 'text', type: 'string'}, //Text to display in the MenuOption

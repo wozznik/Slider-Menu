@@ -28,7 +28,7 @@ Ext.define('SliderMenuDemo.view.Option1', {
                         html: 'Hello, my name is Panel 2....',
                     });
 
-                    this.parent.parent.parent.push(panel);
+	                Ext.ComponentQuery.query('maincard')[0].push(panel);
                 }
             }
         }
