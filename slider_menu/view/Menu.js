@@ -48,6 +48,7 @@ Ext.define('SliderMenu.view.Menu', {
 
         items:{
             xtype: 'toolbar',
+	        docked: 'top',
         },
     },
 
