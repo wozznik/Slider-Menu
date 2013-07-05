@@ -22,7 +22,9 @@ Ext.define('SliderMenu.view.Main', {
         height: '100%',
 
         style: 'position: absolute; opacity: 1; z-index: 200',
-        layout: 'card',
+	    layout: {
+		    type: 'card'
+	    },
 
         menuButtonIcon: 'more',
         menuWidth: 250,
@@ -197,4 +199,12 @@ Ext.define('SliderMenu.view.Main', {
     setToolbarUi: function(ui){
         this.getNavigationBar().setUi(ui);
     },
+
+	/**
+	 * Can be used to change the standard Push and Pop Animation
+	 * @param {Object} anim: Animation-Objekt
+	 */
+	setCustomAnimation: function(anim) {
+		this.getLayout().setAnimation(anim);
+	}
 });

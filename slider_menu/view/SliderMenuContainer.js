@@ -131,6 +131,10 @@ Ext.define('SliderMenu.view.SliderMenuContainer', {
     setMainToolbarUi: function(ui){
         this.getMain().setToolbarUi(ui);
     },
+
+	setMainCustomAnimation: function(anim) {
+		this.getMain().setCustomAnimation(anim);
+	},
     
     /**
      * Gets menu item from slidermenu
