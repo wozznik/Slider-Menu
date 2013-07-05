@@ -51,6 +51,14 @@ Ext.application({
         slidermenu.setMenuIcon('list');
         slidermenu.setMenuToolbarUi('slider-menu-red');
         slidermenu.setMainToolbarUi('slider-menu-red');
+		slidermenu.setMainCustomAnimation(
+			{
+				duration: 300,
+			    easing: 'ease-in-out',
+			    type: 'slide',
+			    direction: 'left'
+	        }
+		);
 
         // Initialize the main view
         Ext.Viewport.add(slidermenu);
