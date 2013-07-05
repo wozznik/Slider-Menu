@@ -93,6 +93,22 @@ and then you can configure a set of parameters:
 	
 	sliderMenu.setMenuIcon('list'); //Sets icon of menu button to 'list' icon
 
+###Push/Pop Animation
+
+	sliderMenu.setMainCustomAnimation(
+		{
+			duration: 300,
+            			    easing: 'ease-in-out',
+            			    type: 'slide',
+            			    direction: 'left'
+		}
+	)
+	//Sets the push and pop animation for the navigationview to slide left and right (default)
+
+###Swipe SlideMenu
+
+	sliderMenu.activateSwipe(); //activate the possibilty to use swipe on every view to open the slideMenu
+
 ###SliderMenu UI
 
 	slidermenu.setMenuToolbarUi('slider-menu-red');

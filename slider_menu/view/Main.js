@@ -23,7 +23,13 @@ Ext.define('SliderMenu.view.Main', {
 
         style: 'position: absolute; opacity: 1; z-index: 200',
 	    layout: {
-		    type: 'card'
+		    type: 'card',
+			animation: {
+				duration: 300,
+					easing: 'ease-in-out',
+				type: 'slide',
+				direction: 'left'
+			}
 	    },
 
         menuButtonIcon: 'more',
