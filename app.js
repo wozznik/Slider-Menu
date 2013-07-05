@@ -59,6 +59,7 @@ Ext.application({
 			    direction: 'left'
 	        }
 		);
+	    slidermenu.activateSwipe();
 
         // Initialize the main view
         Ext.Viewport.add(slidermenu);

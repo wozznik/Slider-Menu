@@ -206,5 +206,22 @@ Ext.define('SliderMenu.view.Main', {
 	 */
 	setCustomAnimation: function(anim) {
 		this.getLayout().setAnimation(anim);
+	},
+
+	/**
+	 * Activates the possibility of opening and closing the menu via swipe
+	 */
+	activateSwipe: function() {
+		var me = this;
+		var viewport = Ext.get('ext-viewport');
+
+		viewport.on('swipe', function(event) {
+			if (event.direction == 'right' && me.isClosed()) {
+				me.down('button[action="openMenu"]').fireEvent('tap');
+			}
+			if (event.direction == 'left') {
+				me.closeMenu(200);
+			}
+		});
 	}
 });

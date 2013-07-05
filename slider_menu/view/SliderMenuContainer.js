@@ -132,8 +132,19 @@ Ext.define('SliderMenu.view.SliderMenuContainer', {
         this.getMain().setToolbarUi(ui);
     },
 
+	/**
+	 * Sets the push and pop animation from the main view
+	 * @param {Object} anim: Animation-Object
+	 */
 	setMainCustomAnimation: function(anim) {
 		this.getMain().setCustomAnimation(anim);
+	},
+
+	/**
+	 * activates the possibility of opening and closing the menu via swipe
+	 */
+	activateSwipe: function() {
+		this.getMain().activateSwipe();
 	},
     
     /**
