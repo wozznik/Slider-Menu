@@ -21,9 +21,9 @@ Ext.define('SliderMenu.store.MenuOptions', {
 		
 		//Customize your menu options
 		data: [
-			{id: 1, view: 'SliderMenuDemo.view.Option1', iconCls: 'action', iconMask:true, text:'Option 1'},
-			{id: 2, view: 'SliderMenuDemo.view.Option2', iconCls: 'action', iconMask:true, text:'Option 2'},
-			{id: 3, view: 'SliderMenuDemo.view.Option3', iconCls: 'action', iconMask:true, text:'Option 3'},
+			{id: 1, xtype: 'option1card', iconCls: 'action', iconMask:true, text:'Option 1'},
+			{id: 2, xtype: 'option2card', iconCls: 'action', iconMask:true, text:'Option 2'},
+			{id: 3, xtype: 'option3card', iconCls: 'action', iconMask:true, text:'Option 3'},
 		]
     }
 });

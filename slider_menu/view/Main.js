@@ -58,9 +58,11 @@ Ext.define('SliderMenu.view.Main', {
             }
         },
 
+	    //Needs to be the first view you want to display, this will be
+	    //your main-view where you can come always back to with the
+	    //back button
         items: {
-            xtype: 'mainwrapper',
-            id: 'mainwrapper',
+            xtype: 'option1card'
         },
 
     },
@@ -78,11 +80,6 @@ Ext.define('SliderMenu.view.Main', {
         }
     },
 
-    pop: function(){
-        this.callParent();
-        this.setNavBarTitle(this.down('#mainwrapper').getActiveView().getTitle());
-    },
-
     isClosed: function() {
         return (this.getDraggable().offset.x == 0);
     },
@@ -94,7 +91,6 @@ Ext.define('SliderMenu.view.Main', {
      * @param {Ext.Container} view: The new view to show
      */
     changeViewTo: function(view){
-        this.down('#mainwrapper').changeViewTo(view);
         this.setNavBarTitle(view.getTitle());
     },
 
